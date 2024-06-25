@@ -19,14 +19,14 @@ document.addEventListener('DOMContentLoaded', function () {
       const personalMessage = personalMessageInput ? personalMessageInput.value : "I've learnt a new world";
       const courseName = courseNameInput ? courseNameInput.value : "a course"; // Fallback to "a course" if no input
   
-      if (studentName.trim() === '' || personalMessage.trim() === '') {
+      if (studentName.trim() === '' || personalMessage.trim() === ''|| courseName.trim() === '') {
         alert('Please fill in all fields');
         return;
       }
       
 
       // 🚨 Generate certificate content dynamically
-      certificateContent.innerHTML = `h
+      certificateContent.innerHTML = `
       <h2>Certificate of Achievement</h2>
       <p>this is to certify that</p>
       <h3>${studentName}</h3>
