@@ -113,3 +113,7 @@ button:hover {
   background-color: #5d5f5e;
 }
 
+img {
+  width: 60%;
+  height: auto;
+}
